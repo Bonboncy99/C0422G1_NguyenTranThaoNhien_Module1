@@ -16,13 +16,12 @@
             width: 100%;
         }
         .label{
-            width: 30%;
+            width: 20%;
             text-align: right;
             color: #364dba;
+            margin-top: 0;
         }
-        .input {
-            width: 70%;
-        }
+
 
         .hobby {
             color: #ff4c00;
@@ -37,32 +36,29 @@
     <h1>SỞ THÍCH CỦA BẠN</h1>
     <table>
         <tr>
-            <td class="label"><label>Họ và tên</label></td>
-            <td class="input"><input type="text" name="yourname"></td>
+            <td class="label">Họ và tên</td>
+            <td class="input" colspan="3"> <input type="text" name="yourname" style="width: 50%" "></td>
         </tr>
         <tr>
-            <td class="label"><label>Email</label></td>
-            <td class="input"><input type="email" name="email"> <br></td>
+            <td class="label">Email</td>
+            <td class="input" colspan="3"><input type="email" name="email" style="width: 40%"></td>
         </tr>
         <tr>
-            <td class="label"><label>Sở thích</label></td>
-            <td class="input">
-                <table>
-                    <tr>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Thể thao</span></td>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Âm nhạc</span></td>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Đọc sách</span</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Lướt web</span></td>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Chơi game</span></td>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Điện ảnh</span></td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox" name="hobby"><span class="hobby">Du lịch</span><br></td>
-                    </tr>
-                </table>
-            </td>
+            <td class="label" >Sở thích</td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Thể thao</span></td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Âm nhạc</span></td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Đọc sách</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Lướt web</span></td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Chơi game</span></td>
+            <td><input type="checkbox" name="hobby"><span class="hobby">Điện ảnh</span></td>
+        </tr>
+        <tr>
+            <td></td>
+
+            <td><input type="checkbox" name="hobby"><span class="hobby">Du lịch</span><br></td>
         </tr>
         <tr>
             <td></td>
@@ -70,8 +66,17 @@
                 <input class="btn" type="submit" value="Gửi thông tin">
                 <input class="btn" type="reset" value="Nhập lại">
             </td>
+            <td></td>
+            <td></td>
+
         </tr>
+
     </table>
 </form>
 </body>
 </html>
+
+
+
+
+
