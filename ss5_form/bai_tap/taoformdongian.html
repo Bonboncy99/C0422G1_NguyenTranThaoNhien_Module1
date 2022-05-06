@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            background-color: #ff4c00;
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+        }
+        .label{
+            width: 30%;
+            text-align: right;
+            color: #364dba;
+        }
+        .input {
+            width: 70%;
+        }
+
+        .hobby {
+            color: #ff4c00;
+        }
+        .btn {
+            background-color: #dcd9d2;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1>SỞ THÍCH CỦA BẠN</h1>
+    <table>
+        <tr>
+            <td class="label"><label>Họ và tên</label></td>
+            <td class="input"><input type="text" name="yourname"></td>
+        </tr>
+        <tr>
+            <td class="label"><label>Email</label></td>
+            <td class="input"><input type="email" name="email"> <br></td>
+        </tr>
+        <tr>
+            <td class="label"><label>Sở thích</label></td>
+            <td class="input">
+                <table>
+                    <tr>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Thể thao</span></td>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Âm nhạc</span></td>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Đọc sách</span</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Lướt web</span></td>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Chơi game</span></td>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Điện ảnh</span></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="hobby"><span class="hobby">Du lịch</span><br></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input class="btn" type="submit" value="Gửi thông tin">
+                <input class="btn" type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
