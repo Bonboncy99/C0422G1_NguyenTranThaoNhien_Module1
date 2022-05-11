@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="month">
+<button type="submit"  onclick="songay()">Tính số ngày</button>
+<p id="result"></p>
+<script>
+    function songay() {
+        let day;
+        let month = parseInt(document.getElementById('month').value);
+        switch (month) {
+            case 2 : day = '28 hoặc 29'; break;
+
+            case 1:
+            case 3 :
+            case 5 :
+            case 7 :
+            case 8 :
+            case 10 :
+            case 12 : day = 31; break;
+            case 4 :
+            case 6 :
+            case 9 :
+            case 11 : day = 30; break;
+
+        }
+        document.getElementById('result').innerText = `Tháng ${month} có ${day} ngày.`
+
+    }
+</script>
+</body>
+</html>
