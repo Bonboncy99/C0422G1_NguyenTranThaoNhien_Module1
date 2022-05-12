@@ -51,9 +51,39 @@
 
 
 <!--Bai6 <br>-->
-<input type="text" placeholder="Nhập a"> X + <input type="text" placeholder="Nhập b"> = 0;
-<br>
-<input type="button" value="Tìm X">
+<!--<input id="heSoA" type="text" placeholder="Nhập a"> X + <input id="heSoB" type="text" placeholder="Nhập b"> = 0;-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<input type="button" onclick="timX()" value="Tìm X">-->
+<!--<p id="result"></p>-->
+<!--<script>-->
+<!--    function timX() {-->
+<!--        let a = document.getElementById('heSoA').value;-->
+<!--        let b = document.getElementById('heSoB').value;-->
+<!--        let x = -(b/a)-->
+<!--        document.getElementById('result').innerText=  'Phương trình có nghiệm là x = ' + x-->
+<!--    }-->
+<!--</script>-->
+
+
+
+<!--Bai7 <br>-->
+<!--<script>-->
+<!--    let a = +prompt('nhap a');-->
+<!--    let b = +prompt('nhap b');-->
+<!--    let c = +prompt('nhap c');-->
+<!--    let delta = b*b - 4*a*c;-->
+<!--    if (delta < 0) {-->
+<!--        alert('Phương trình vô nghiệm')-->
+<!--    } else if (delta == 0) {-->
+<!--        alert('Phương trình có nghiệm kép x = ' + (-b)/2*a);-->
+<!--    } else {-->
+<!--        alert(`Phương trình có 2 nghiệm x1 = ${(-b - Math.sqrt(delta))/2*a}  và x2 = ${(-b - Math.sqrt(delta))/2*a}  `)-->
+<!--    }-->
+<!--</script>-->
+
+
 
 <!--Bai8 <br>-->
 <!--<script>-->
@@ -62,7 +92,66 @@
 <!--       alert(age + 'Là tuổi của một người')-->
 <!--   } else-->
 <!--       alert(age + 'KHÔNG PHẢI là tuổi của một người')-->
+<!--</script>-->
 
+
+
+<!--Bai9 <br>-->
+<!--    <script>-->
+<!--        let a = +prompt('Nhập cạnh thứ nhất') ;-->
+<!--        let b = +prompt('Nhập cạnh thứ hai') ;-->
+<!--        let c = +prompt('Nhập cạnh thứ ba') ;-->
+<!--        if (a>0 && b>0 && c>0 &&(a + b > c) && (b + c > a) && (a + c > b)) {-->
+<!--            alert('Đây là 3 cạnh của 1 tam giác')-->
+<!--        } else {-->
+<!--            alert('Đây KHÔNG PHẢI là 3 cạnh của 1 tam giác')-->
+<!--        }-->
+<!--    </script>-->
+
+
+
+
+<!--bài10 <br>-->
+<!--    <script>-->
+<!--        let count = +prompt('Nhập số điện');-->
+<!--        let price-->
+<!--        if (count <= 80) {-->
+<!--            price = count * 2000-->
+<!--        } else {-->
+<!--            price = 80 * 2000 + (count - 80)*3000-->
+<!--        }-->
+<!--        alert('Tổng tiền điện là ' + price)-->
+<!--    </script>-->
+
+
+
+<!--Bai11 <br>-->
+<!--<script>-->
+<!--    let salary = parseFloat(prompt('Nhap tien lương'));-->
+<!--    let thue;-->
+<!--    if (salary > 50000000) {-->
+<!--         thue = salary * 0.4;-->
+<!--        alert('Tổng thuế là ' + thue)-->
+<!--    } else if (salary > 20000000) {-->
+<!--         thue = salary * 0.3;-->
+<!--        alert('Tổng thuế là ' + thue)-->
+<!--        console.log(2)-->
+<!--    } else if (salary > 10000000) {-->
+<!--         thue = salary * 0.4;-->
+<!--        alert('Tổng thuế là ' + thue)-->
+<!--    } else {-->
+<!--        alert('Bạn quá nghèo để đóng thuế')-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bai12 <br>-->
+<!--<script>-->
+<!--    let money = parseFloat(prompt('Nhập số tiền Gửi Ngân hàng ban đầu'));-->
+<!--    let year = parseFloat(prompt('Nhập số năm'));-->
+<!--    let laiSuat = parseFloat(prompt('Nhập lãi suất'));-->
+<!--    let tienLai = (money * (1 + laiSuat))**year-->
+<!--    alert('Tổng số tiền lãi là ' + tienLai)-->
 
 <!--</script>-->
 

@@ -6,26 +6,33 @@
 </head>
 <body>
 <input placeholder="Nhập tháng" type="text" id="month">
-<button type="submit"  onclick="songay()">Check</button>
+<button type="submit" onclick="soNgay()">Check</button>
 <p id="result"></p>
 <script>
-    function songay() {
+    function soNgay() {
         let day;
         let month = parseInt(document.getElementById('month').value);
         switch (month) {
-            case 2 : document.getElementById('result').innerText = `Tháng ${month} có 28 hoặc 29 ngày`; break;
+            case 2 :
+                document.getElementById('result').innerText = `Tháng ${month} có 28 hoặc 29 ngày`;
+                break;
             case 1:
             case 3 :
             case 5 :
             case 7 :
             case 8 :
             case 10 :
-            case 12 : document.getElementById('result').innerText = `Tháng ${month} có 31 ngày`; break;
+            case 12 :
+                document.getElementById('result').innerText = `Tháng ${month} có 31 ngày`;
+                break;
             case 4 :
             case 6 :
             case 9 :
-            case 11 : document.getElementById('result').innerText = `Tháng ${month} có 31 ngày`; break;
-            default: document.getElementById('result').innerText = `Nhập sai tên tháng`;
+            case 11 :
+                document.getElementById('result').innerText = `Tháng ${month} có 31 ngày`;
+                break;
+            default:
+                document.getElementById('result').innerText = `Nhập sai tên tháng`;
 
         }
     }
