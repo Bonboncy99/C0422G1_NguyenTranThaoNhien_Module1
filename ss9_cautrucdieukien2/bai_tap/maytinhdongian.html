@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            background-color: pink;
+        }
+        td {
+            width: 30px;
+        }
+        button {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <table border="1">
+        <tr><td colspan="4"><input type="text" name="screen"></td></tr>
+        <tr>
+            <td><button type="button" onclick="screen.value += 1">1</button></td>
+            <td><button type="button" onclick="screen.value += 1">2</button></td>
+            <td><button type="button" onclick="screen.value += 1">3</button></td>
+            <td><button type="button" onclick="screen.value += '+'">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="screen.value += 4">4</button></td>
+            <td><button type="button" onclick="screen.value += 5">5</button></td>
+            <td><button type="button" onclick="screen.value += 6">6</button></td>
+            <td><button type="button" onclick="screen.value += '-'">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="screen.value += 7">7</button></td>
+            <td><button type="button" onclick="screen.value += 8">8</button></td>
+            <td><button type="button" onclick="screen.value += 9">9</button></td>
+            <td><button type="button" onclick="screen.value += '*'">*</button></td>
+        </tr>
+        <tr>
+            <td><button type="reset">AC</button></td>
+            <td><button type="button" onclick="screen.value += 0">0</button></td>
+            <td><button type="button" onclick="screen.value = eval(screen.value)">=</button></td>
+            <td><button type="button" onclick="screen.value += '/'">/</button></td>
+        </tr>
+
+    </table>
+</form>
+
+<script>
+    // let mayTinh = document.getElementById('mayTinh')
+    function so1(){
+        let a = document.getElementById(1).value;
+        console.log(a)
+    }
+
+</script>
+</body>
+</html>

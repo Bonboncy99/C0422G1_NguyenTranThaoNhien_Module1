@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai1 <br>-->
+<!--<script>-->
+<!--    let a = +prompt('nhap so a');-->
+<!--    let b = +prompt('nhap so b');-->
+<!--    if(a%b==0) {-->
+<!--        document.write(a + ' chia hết cho ' + b);-->
+<!--    } else {-->
+<!--        document.write(a + ' không chia hết cho ' + b);-->
+<!--    }-->
+
+
+<!--Bai2 <br>-->
+<!--<script>-->
+<!--    let age = + prompt('Nhap so tuoi');-->
+<!--    if (age >= 16) {-->
+<!--        document.write('Bạn đủ điều kiện vào lớp 10')-->
+<!--    } else {-->
+<!--        document.write('Bạn KHÔNG đủ điều kiện vào lớp 10')-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bai3 <br>-->
+<!--<script>-->
+<!--    let a = +prompt('Nhập 1 số nguyên bất kì');-->
+<!--    if (a > 0) {-->
+<!--        document.write(a + ' Lớn hơn 0');-->
+<!--    } else if (a<0) {-->
+<!--        document.write(a + ' bé hơn 0');-->
+<!--    } else {-->
+<!--        document.write(a + ' bằng 0');-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bai4 <br>-->
+<!--<script>-->
+<!--    let a = +prompt('Nhập số thứ nhất');-->
+<!--    let b = +prompt('Nhập số thứ hai');-->
+<!--    let c = +prompt('Nhập số thứ ba');-->
+<!--    let max = a;-->
+<!--    if (b > max ){-->
+<!--        max = b;-->
+<!--    }-->
+<!--    if (c > max) {-->
+<!--        max = c-->
+<!--    }-->
+<!--    document.write('Số lớn nhất là ' + max)-->
+<!--</script>-->
+
+
+<!--Bai5 <br>-->
+<!--<script>-->
+<!--    let diemhesomot = +prompt('Nhap điểm hệ số 1');-->
+<!--    let diemhesohai = +prompt('Nhap điểm Giữa kỳ');-->
+<!--    let diemhesoba = +prompt('Nhap điểm Cuối cùng');-->
+<!--    let average = (diemhesomot + (2 * diemhesohai) + (3 * diemhesoba))/6;-->
+<!--    alert('Điểm trung bình là ' + average)-->
+<!--    if (average>=8.5) {-->
+<!--        alert('Giỏi')-->
+<!--    } else if (average>=7) {-->
+<!--        alert('Khá')-->
+<!--    } else if (average>=5.5) {-->
+<!--        alert('Trung bình')-->
+<!--    } else {-->
+<!--        alert('Yếu')-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--Bai6 <br>-->
+<!--<script>-->
+<!--    let doanhThu = +prompt('Nhập doanh thu');-->
+<!--    let hoaHong-->
+<!--    if (Number.isFinite(doanhThu)) {-->
+<!--        if (doanhThu <= 200000) {-->
+<!--            hoaHong = 0.03 * doanhThu;-->
+<!--        } else if (doanhThu <=500000) {-->
+<!--            hoaHong = 0.05* doanhThu;-->
+<!--        } else {-->
+<!--            hoaHong = 0.* doanhThu;-->
+<!--        }-->
+<!--        alert('Hoa Hồng là ' + hoaHong);-->
+<!--    } else {-->
+<!--        alert('Bạn không nhập đúng số tiền')-->
+<!--    }-->
+
+<!--</script>-->
+
+
+Bai7 <br>
+<script>
+    let time = +prompt('Số phút gọi');
+    let price = 25000;
+    if (time <= 50 ) {
+        price = price + (time * 600)
+    } else if (time <= 200 ) {
+        price = price + (50*600) +((time-50) * 400);
+    } else  {
+        price = price + (50 * 600) + (150 *400) +((time -200)*200);
+    }
+    alert(`Giá tiền là ${price} đồng`)
+</script>
+</body>
+</html>
