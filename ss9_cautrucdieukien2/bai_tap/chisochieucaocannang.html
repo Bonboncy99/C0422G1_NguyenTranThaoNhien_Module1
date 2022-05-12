@@ -21,7 +21,6 @@
             let a = +(document.getElementById('weight').value);
             let b = +(document.getElementById('height').value);
             let bmi = a / (b * b);
-            let result
             if (bmi >= 30) {
                 document.getElementById('result').innerText = 'Obese'
             } else if (bmi >= 25) {
@@ -32,8 +31,6 @@
                 document.getElementById('result').innerText = 'Underweight'
             }
         }
-
-
 
     </script>
 </body>
