@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let daySoFibonaci = 1;
+    let n1 = 0;
+    let n2 = 1;
+    let total = daySoFibonaci
+    for (i = 1; i <= 20; i++) {
+        // console.log(i,daySoFibonaci, total)
+        total += daySoFibonaci;
+        daySoFibonaci += n1;
+        n1 = n2;
+        n2 = daySoFibonaci;
+    }
+    alert(total)
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let quantity = parseInt(prompt('Nhập số lượng số nguyên tố cần in ra'));
+        let count = 0;
+        let soUoc = 0;
+        for (let i = 2; i < 1000; i++) {
+            if (count < quantity) {
+                for (let j = 1; j <= i; j++) {
+                    if (i % j == 0) {
+                        soUoc += 1;
+                    }
+                }
+                if (soUoc == 2) {
+                    document.write(i + '<br>')
+                    count += 1;
+                }
+                soUoc = 0;
+            }  else {
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

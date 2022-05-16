@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="demSo()">Bắt đầu</button>
+<script>
+    function demSo() {
+        let numberMax = parseInt(prompt('Số bạn muốn đoán trong khoảng lớn nhất là bao nhiêu?'));
+        let numberRandom = Math.floor(Math.random() * numberMax);
+        console.log(numberRandom);
+
+        let number = prompt('Nhập số bạn đoán');
+        for (let i = 0; i <= 3; i++) {
+            if (number == numberRandom) {
+                alert('Bạn đoán đúng rồi!')
+                break
+            } else {
+                if (number > numberRandom) {
+                    number = prompt('Số bạn đoán LỚN hơn, hãy đoán lại');
+                } else if (number < numberRandom) {
+                    number = prompt('Số bạn đoán BÉ hơn, hãy đoán lại');
+                }
+            }
+            if (i == 3) {alert('Bạn đã hết số lần đoán')}
+
+
+        }
+    }
+</script>
+</body>
+</html>

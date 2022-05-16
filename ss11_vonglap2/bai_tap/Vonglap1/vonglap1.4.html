@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soFibonaci = 1;
+    let n1 = 0;
+    let n2 = 1;
+    for (let i = 0; i <= 10; i++) {
+        console.log(soFibonaci)
+        soFibonaci += n1;
+        if (soFibonaci % 5 == 0) {
+            alert('Số đầu tiên trong dãy Fibonaci chia hết cho 5 là ' + soFibonaci)
+            break;
+        }
+        n1 = n2;
+        n2 = soFibonaci;
+    }
+
+
+
+
+    // let daySoFibonaci = 1;
+    // let n1 = 0;
+    // let n2 = 1;
+    // for (let i = 0; i <= 20; i++) {
+    //     document.write(daySoFibonaci + '<br>');
+    //     if (daySoFibonaci % 5 ==0) {
+    //         break;
+    //     }
+    //     daySoFibonaci += n1;
+    //     n1 = n2;
+    //     n2 = daySoFibonaci;
+    // }
+
+    // alert('Số đầu tiên trong dãy Fibonaci chia hết cho 5 là ' + daySoFibonaci)
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // let a = prompt('Nhập chiều dài hình chử nhật');
+    // let b = prompt('Nhập chiều rộng hình chử nhật');
+    //    for (let i = 1; i <= b; i++) {
+    //        if (i ==1 || i ==b) {
+    //            for (let j =1;j <= a; j++) {
+    //                document.write('*')
+    //            }
+    //        } else {
+    //            for (let j =1;j <= a; j++) {
+    //                if (j == 1 || j ==a) {
+    //                    document.write('*')
+    //                } else {
+    //                        document.write('&nbsp&nbsp')
+    //                }
+    //            }
+    //        }
+    //
+    //        document.write('<br>')
+    //    }
+
+
+    for (let i = 1; i <= 7; i++) {
+        if (i == 1 || i == 7) {
+            for (let j = 1; j <= 21; j++) {
+                document.write('*')
+            }
+        } else {
+            for (let j = 1; j <= 21; j++) {
+                if (j == 1 || j == 21) {
+                    document.write('*')
+                } else {
+                    document.write('&nbsp&nbsp')
+                }
+            }
+        }
+
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

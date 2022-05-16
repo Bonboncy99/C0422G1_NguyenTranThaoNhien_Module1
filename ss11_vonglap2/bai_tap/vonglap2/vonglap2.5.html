@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let money = parseFloat(prompt('Nhập số tiền gửi ban đầu'))
+        let month = parseFloat(prompt('Nhập số tháng'))
+        let tiLeLaiSuat = parseFloat(prompt('Nhập lãi suất hàng tháng'))
+        let tongTienLai;
+        for (let i = 0; i < month; i++) {
+            tongTienLai = money * tiLeLaiSuat;
+            money = money + tongTienLai
+        }
+        document.write('Số tiền lãi nhận được theo tháng là' + tongTienLai.toFixed(2))
+    </script>
+
+
+
+
+</body>
+</html>
