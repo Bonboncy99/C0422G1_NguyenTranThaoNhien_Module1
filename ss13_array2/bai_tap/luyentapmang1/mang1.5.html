@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+   // let str = prompt('Nhập 1 chuỗi');
+   // let arr = str.split('');
+   // console.log(arr)
+   // let nguyenAm = ['a','e','o','u','i']
+   // let count = 0;
+   // for (let value of str){
+   //     if (nguyenAm.includes(value)){
+   //         document.write(value + '<br>')
+   //         count++
+   //     }
+   // }
+   // document.write(`Có ${count} số nguyên âm trong chuỗi str`)
+
+
+   // let str = prompt('Nhập 1 chuỗi');
+   // console.log(str)
+   // let count = 0;
+   //  for (var value of str) {
+   //      if ((value == 'a') || (value == 'o') || (value == 'e') ||(value == 'u') ||(value == 'i')) {
+   //          count++
+   //      }
+   //  }
+   // document.write(`Có ${count} số nguyên âm trong chuỗi str`)
+
+
+
+
+
+
+    let str = prompt('Nhập 1 chuỗi');
+    let arr = [];
+    for (let value of str) {
+        console.log(value)
+        arr.push(value)
+    }
+
+   //  let arr = str.split('')
+   console.log(arr)
+   let count = 0;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i-1] == '-' && !(isNaN(i))) {
+            count ++;
+        }
+    }
+   document.write(`Có ${count} số nguyên âm trong chuỗi str`)
+
+</script>
 </body>
 </html>

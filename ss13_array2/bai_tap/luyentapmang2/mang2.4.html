@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập 1 chuỗi');
+
+    let count = 1
+    for (let value of str) {
+        console.log(value)
+        if (value == ' ') {
+            count++
+            console.log(count)
+        }
+    }
+    document.write(str + '<br>')
+    document.write('Tổng số từ trong chuỗi là ' + count)
+</script>
+</body>
+</html>

@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let soLuong = parseInt(prompt('Nhập số lượng phần tử của mảng'))
+    let arr = [];
+    for (let i = 0; i < soLuong; i++) {
+        let number = parseInt(prompt('Nhập phần tử thứ ' + (i + 1) + 'vào mảng'))
+        arr.push(number)
+    }
+    console.log(arr)
+    let sum = 0;
+    let average;
+    let viTri = 1
+    let max = arr[0]
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        average = sum / arr.length;
+        if (arr[i] > max) {
+            max = arr[i];
+            viTri = i +1;
+        }
+            }
+
+    document.write('Max = ' + max + ' Tại vị trí i ='+ viTri  + '<br>');
+    document.write(`Sum = ${sum} and average = ${average}`)
+
+</script>
 </body>
 </html>

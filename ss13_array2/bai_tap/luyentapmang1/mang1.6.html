@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 1; i <= 10;i++){
+        let element = prompt('Nhap phan tu thu ' + i);
+        arr.push(element);
+    }
+    console.log(arr)
+    let v = prompt('nhap phan tu can kiem tra');
+    for (let i = 0; i <arr.length; i++) {
+        if (arr[i] == v) {
+            document.write('V is in the array');
+            break;
+        }
+        if (i == 9) {
+            document.write('V is NOT in the array');
+        }
+    }
+
+
+    // if (arr.includes(v)) {
+    //     document.write('V is in the array');
+    // } else {
+    //     document.write('V is NOT in the array');
+    // }
+</script>
+</body>
+</html>

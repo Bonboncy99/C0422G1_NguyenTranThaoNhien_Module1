@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Từ Điển</h2>
+Nhap tu: <input type="text" id="tuvung">
+<button onclick="timkim()">Search</button>
+<p id="hienthi"></p>
+<script>
+    let English = ["apple", "beautiful", "stars", "moon", "sun", "dream"]
+    let Vietnamese = ["tao", "xinh dep", "ngoi sao", "mat trang", "mat troi", "giac mo"]
+
+    function timkim() {
+        let vocabulary = document.getElementById('tuvung').value;
+        for (i = 0; i < English.length; i++) {
+            if (vocabulary === English[i]) {
+                flag = true
+                document.getElementById('hienthi').innerHTML = Vietnamese[i]
+                break;
+            } else if (vocabulary === Vietnamese[i]) {
+                flag = true
+                document.getElementById('hienthi').innerHTML = English[i]
+                break;
+            }
+        }
+        if (flag === false) {
+            document.getElementById('hienthi').innerHTML = document.write('khong co trong tu dien')
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
+
+

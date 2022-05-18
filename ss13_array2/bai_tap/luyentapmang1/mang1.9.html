@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let arr2 = [];
+    let arr3 = [];
+    for (let i = 0; i < 3; i++) {
+        let number1 = prompt('Nhập phần tử thứ ' + (i + 1) + ' vào mảng 1')
+        arr1.push(number1);
+    }
+    for (let j = 0; j < 3; j++) {
+        let number2 = prompt('Nhập phần tử thứ ' + (j + 1) + ' vào mảng 2')
+        arr2.push(number2);
+    }
+
+    for (let value1 of arr1) {
+        arr3.push(value1)
+
+    }
+    for (let value2 of arr1) {
+        arr3.push(value2)
+
+    }
+
+
+    document.write(arr1 + '<br>')
+    document.write(arr2 + '<br>')
+//
+//
+//     let str1 = '';
+//     let str2 = '';
+//     for (let value of arr1){
+//         str1 += value;
+//     }
+//     for (let value of arr2){
+//         str2 += value;
+//     }
+//
+//
+//     let str3 = str1 + str2
+//     for (let value of str3) {
+//
+//             arr3.push(value)
+//     }
+//     console.log(arr3)
+//
+document.write(arr3)
+
+</script>
+</body>
+</html>

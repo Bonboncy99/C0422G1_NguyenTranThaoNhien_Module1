@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 6</title>
+</head>
+<body>
+<script>
+    //nhập vào một mảng ký tự
+    //tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+    let num = parseInt(prompt('Input number of elements in the array:'));
+    let a = Array(num);
+    for (let i = 0; i < a.length; i++) {
+        a[i]= prompt('Input the element '+i+": ");
+    }
+    document.write('before: '+a+'<br>');
+    for (let i = 0; i < a.length; i++) {
+        if (a[i]=='-') a[i] = '_';
+    }
+    document.write('after: '+a);
+</script>
+</body>
+</html>

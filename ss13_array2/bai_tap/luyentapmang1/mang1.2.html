@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let number= parseInt(prompt('Nhap phan tu'));
+    arr.push(number);
+
+    for (let i = 0; i < 9;){
+        let number= parseInt(prompt('Nhap phan tu'));
+        if (arr.includes(number)){
+            number= parseInt(prompt('Nhap phan tu'))
+        } else {
+            arr.push(number);
+            i++
+        }
+
+    }
+    console.log(arr)
+    // let arr = [1,3,2,6,4,9,3,0,7,4,1];
+    let max = arr[0]
+    let vitri = 1;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i]>max) {
+            max = arr[i]
+            vitri = i +1
+
+        }
+    }
+        document.write(`Phan tu lon nhat la ${max} tai vi tri ${vitri} `)
+</script>
 </body>
 </html>

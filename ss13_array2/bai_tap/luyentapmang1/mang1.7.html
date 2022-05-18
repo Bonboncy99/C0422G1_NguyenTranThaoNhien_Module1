@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 1; i <= 5;i++){
+        let element = prompt('Nhap phan tu thu ' + i);
+        arr.push(element);
+    }
+    document.write(arr + '<br>')
+    let v = prompt('nhap phan tu can kiem tra');
+    let j;
+    for (let i = arr.length-1 ; i >=0; i--) {
+        if (arr[i] == v) {
+            let j;
+            for ( j = i; j < arr.length;j++){
+                arr[j] = arr[j+1];
+                if (j== arr.length-1) {
+                    arr[j] = 0;
+                }
+            }
+        }
+
+    }
+
+    document.write(arr)
+
+
+
+
+
+</script>
+</body>
+</html>

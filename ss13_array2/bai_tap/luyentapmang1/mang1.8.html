@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 1; i <= 10; i++) {
+        let number = parseInt(prompt('Nhập phần tử thứ ' + i))
+        arr.push(number);
+    }
+    document.write(arr + '<br>')
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i; j < arr.length; j++) {
+            if (arr[j] > arr[i]) {
+                let c = arr[j];
+                arr[j] = arr[i];//
+                arr[i] = c
+            }
+        }
+    }
+    document.write(arr + '<br>')
+
+</script>
+</body>
+</html>

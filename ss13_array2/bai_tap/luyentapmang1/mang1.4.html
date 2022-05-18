@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let soLuong = parseInt(prompt('Nhập số lượng phần tử của mảng'))
+    let arr = [];
+    for (let i = 0; i < soLuong; i++) {
+        let number = parseInt(prompt('Nhập phần tử thứ ' + (i + 1) + 'vào mảng'))
+        arr.push(number)
+    }
+    console.log(arr)
+    document.write('Mảng gốc là ' +arr + '<br>')
+    let first = 0;
+    let last = arr.length -1;
+    while (first < last) {
+        let b = arr[first];
+        arr[first] = arr[last];
+        arr[last] = b
+        first++;
+        last--
+    }
+    document.write('Mảng đảo ngược là '+arr)
+</script>
 </body>
 </html>
