@@ -5,12 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+
+
 <!--Bai1-->
 <!--<script>-->
-<!--    myColor = ["Red", "Green", "White", "Black"];-->
-<!--    console.log(myColor.toString());-->
-<!--    console.log(myColor.join());-->
-<!--    console.log(myColor.join('+'));-->
+<!--    let arr = []-->
+<!--    let n = parseInt(prompt('Nhap so luong phan tu cua mang'));-->
+<!--    for (let i = 0; i < n; i++) {-->
+<!--        arr[i] = prompt('Nhap phan tu thu '+ (i+1))-->
+<!--    }-->
+<!--    console.log(arr)-->
+<!--    console.log(arr.toString());-->
+<!--    console.log(arr.join())-->
 <!--</script>-->
 
 
@@ -20,51 +26,40 @@
 
 <!--Bai2-->
 <!--<script>-->
-<!--    const num=window.prompt();-->
-<!--    const str = num.toString();-->
-<!--    const result = [str[0]];-->
-
-<!--    for(let x=1; x<str.length; x++)-->
-<!--    {-->
-<!--        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))-->
-<!--        {-->
-<!--            result.push('-', str[x]);-->
-<!--        }-->
-<!--        else-->
-<!--        {-->
-<!--            result.push(str[x]);-->
+<!--    let str = prompt('Nhap 1 chuoi so');-->
+<!--    let result = [str[0]]-->
+<!--    for (let i = 1; i < str.length ; i++) {-->
+<!--        if ((str[i-1] % 2 == 0) && (str[i] % 2 == 0)){-->
+<!--            result.push('-',str[i])-->
+<!--        } else {-->
+<!--            result.push(str[i])-->
 <!--        }-->
 <!--    }-->
-<!--    console.log(result.join(''));-->
+<!--    console.log(result.join(''))-->
 <!--</script>-->
+
+
+
 
 
 
 Bai3
 <script>
-    var str = 'c';
-    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
-    var result = [];
+    let str = 'HomNayLaMotngayDeptroi';
+    let result = [];
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuwxyz';
 
-    for(var x=0; x<str.length; x++)
-    {
-        if(UPPER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toLowerCase());
+    for (let value of str) {
+        if (UPPER.includes(value)) {
+            result.push(value.toLocaleLowerCase())
         }
-        else if(LOWER.indexOf(str[x]) !== -1)
-        {
-            result.push(str[x].toUpperCase());
-        }
-        else
-        {
-            result.push(str[x]);
+        if (LOWER.includes(value)) {
+            result.push(value.toUpperCase())
         }
     }
-    console.log(result.join(''));
+    console.log(result.join(''))
 </script>
-
 
 
 </body>

@@ -7,32 +7,39 @@
 <body>
 <h2>Từ Điển</h2>
 Nhap tu: <input type="text" id="tuvung">
-<button onclick="timkim()">Search</button>
+<button onclick="timkiem()">Search</button>
 <p id="hienthi"></p>
-<script>
-    let English = ["apple", "beautiful", "stars", "moon", "sun", "dream"]
-    let Vietnamese = ["tao", "xinh dep", "ngoi sao", "mat trang", "mat troi", "giac mo"]
 
-    function timkim() {
-        let vocabulary = document.getElementById('tuvung').value;
-        for (i = 0; i < English.length; i++) {
-            if (vocabulary === English[i]) {
-                flag = true
-                document.getElementById('hienthi').innerHTML = Vietnamese[i]
+
+
+<script>
+    function timkiem (tuCanDich) {
+        let english = ['one','two','thrre','four','five','six','seven','eight','night','ten'];
+        let vietnamese = ['1','2','3','4','5','6','7','8','9','10']
+        tuCanDich = document.getElementById('tuvung').value;
+        let flag = false;
+        for (let i = 0; i < english.length ; i++) {
+            if (english[i] === tuCanDich){
+                flag = true;
+                document.getElementById('hienthi').innerText = vietnamese[i];
                 break;
-            } else if (vocabulary === Vietnamese[i]) {
-                flag = true
-                document.getElementById('hienthi').innerHTML = English[i]
+            } else if (vietnamese[i] === tuCanDich) {
+                flag = true;
+                document.getElementById('hienthi').innerText = english[i]
                 break;
             }
-        }
-        if (flag === false) {
-            document.getElementById('hienthi').innerHTML = document.write('khong co trong tu dien')
-        }
+            if (!flag){
+                document.getElementById('hienthi').innerHTML = 'Từ bạn tìm không có trong từ điẻn'
+            }
 
+        }
     }
+    </script>
 
-</script>
+
+
+
+
 
 </body>
 </html>

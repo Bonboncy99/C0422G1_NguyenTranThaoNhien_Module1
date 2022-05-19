@@ -6,28 +6,24 @@
 </head>
 <body>
 <script>
-    let srt1 = prompt('Nhap chuoi dau tien');
-    let srt2 = prompt('Nhap chuoi thu hai');
+    let str1 = prompt('Nhap chuoi dau tien');
+    let str2 = prompt('Nhap chuoi thu hai');
     let count = 0;
-    if (str1.length == str2.length) {
+    if (str1.length != str2.length) {
+        document.write('Hai chuoi khac nhau')
+    } else {
         for (let i = 0; i < str1.length; i++) {
             if (str1[i] != str2[i]) {
                 count = 1
                 break;
             }
-
         }
-        if (count == 0) {
-            document.write('Hai chuoi giong nhau')
-        } else {
-            document.write('Hai chuoi khac nhau')
-
-        }
-
-    } else {
-        document.write('Hai chuoi khac nhau')
     }
-
+    if (count == 1) {
+        document.write('Hai chuoi khac nhau')
+    } else {
+        document.write('Hai chuoi giong nhau')
+    }
 
 </script>
 </body>

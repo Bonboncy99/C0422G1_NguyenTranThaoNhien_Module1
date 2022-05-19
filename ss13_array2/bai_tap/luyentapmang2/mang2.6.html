@@ -6,18 +6,24 @@
 </head>
 <body>
 <script>
-    //nhập vào một mảng ký tự
-    //tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
-    let num = parseInt(prompt('Input number of elements in the array:'));
-    let a = Array(num);
-    for (let i = 0; i < a.length; i++) {
-        a[i]= prompt('Input the element '+i+": ");
+    let number = parseInt(prompt('Nhap so luong phan tu cua mang'));
+    let arr = new Array(number)
+    for (let i = 1; i <= number ; i++) {
+        arr[i] = prompt('Nhap phan tu thu' + i)
     }
-    document.write('before: '+a+'<br>');
-    for (let i = 0; i < a.length; i++) {
-        if (a[i]=='-') a[i] = '_';
+    document.write(arr + '<br>')
+    //
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == '-') {
+            arr[i] = '_'
+            console.log(i)
+        }
     }
-    document.write('after: '+a);
+    document.write(arr)
+
+
+
 </script>
 </body>
 </html>
