@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reverseArray(arr) {
+        // return arr.reverse()
+            let first = 0;
+            let last = arr.length -1;
+            while (first < last) {
+                let c = arr[first];
+                arr[first] = arr[last];
+                arr[last] = c;
+                first++;
+                last--;
+            }
+            return arr;
+
+    }
+    let myArray = [];
+    let n = parseInt(prompt('Nhập số phần tử của mảng'));
+    for (let i = 0; i < n ; i++) {
+        myArray[i] = prompt('Nhập phần tử thứ '+ (i+1))
+    }
+    document.write(myArray + '<br>');
+    reverseArray(myArray)
+    document.write(myArray)
+
+</script>
+</body>
+</html>

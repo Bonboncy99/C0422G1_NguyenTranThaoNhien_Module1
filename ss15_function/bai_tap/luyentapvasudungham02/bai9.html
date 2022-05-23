@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function find(arr,x) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]==x) {
+                count++
+            }
+        }
+       if (count) {
+           return count;
+       } else {
+           return -1
+       }
+    }
+
+    let str = prompt('Nhâp 1 chuỗi');
+    let arr = str.split('');
+    let a = prompt('Nhập kí tự cần kiểm tra');
+    document.write(arr+ '<br>')
+    document.write(find(arr,a))
+
+</script>
+</body>
+</html>

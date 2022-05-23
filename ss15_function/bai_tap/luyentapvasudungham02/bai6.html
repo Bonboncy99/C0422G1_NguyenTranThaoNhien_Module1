@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPositiveInteger(n) {
+        if (Number.isInteger(n) && n > 0) {
+            document.write(n + ' là số nguyên dương');
+        } else {
+            document.write(n + ' KHÔNG phải là số nguyên dương')
+        }
+    }
+
+    let a = parseFloat(prompt('Enter a number'));
+    isPositiveInteger(a)
+
+</script>
+</body>
+</html>

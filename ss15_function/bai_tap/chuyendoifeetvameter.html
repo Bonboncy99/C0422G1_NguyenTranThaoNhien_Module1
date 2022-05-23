@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseInt(prompt('Nhập số meter cần đổi'));
+    let b =parseInt(prompt('Nhập số feet cần đổi'));
+    function meterToFeet(meter) {
+        let feet =  (meter * 3.279).toFixed(3);
+        document.write( meter + ' meter ='+feet+ ' feet' + '<br>');
+        return feet;
+    }
+    function feetToMeter(feet) {
+        let meter =  (feet * 0.305).toFixed(3);
+        document.write(feet + ' feet = '+ meter + ' meter'+'<br>');
+        return meter;
+    }
+    meterToFeet(a);
+    feetToMeter(b)
+</script>
+</body>
+</html>

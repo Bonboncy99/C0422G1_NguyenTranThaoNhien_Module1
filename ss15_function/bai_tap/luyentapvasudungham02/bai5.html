@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function min(a,b,c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        return min
+    }
+
+    let x = parseFloat(prompt('Nhap x'));
+    let y = parseFloat(prompt('Nhap y'));
+    let z = parseFloat(prompt('Nhap z'));
+    document.write(`min cua ${x}, ${y}, ${z}  la ${min(x,y,z)}`)
+
+</script>
+</body>
+</html>

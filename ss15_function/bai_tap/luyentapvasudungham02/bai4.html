@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isNumber(n) {
+        // if (n%n==0){
+        //     document.write(n + ' is a number')
+        // } else {
+        //     document.write(n + ' is NOT a number')
+        // }
+
+        if (isNaN(n)){
+            document.write(n + ' is NOT a number')
+        } else {
+            document.write(n + ' is a number');
+        }
+    }
+    let a = parseFloat(prompt('enter a number'))
+
+    isNumber(a)
+</script>
+</body>
+</html>

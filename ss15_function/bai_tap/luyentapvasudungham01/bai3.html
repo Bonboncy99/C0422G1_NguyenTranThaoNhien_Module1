@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1=parseInt(prompt('Enter your number 1 '))
+    let number2=parseInt(prompt('Enter your number 2 '))
+    function sum(a,b) {
+        if (a > b) {
+            document.write(a + ' lớn hơn ' +b)
+        } else if (a < b){
+            let sum = a + b;
+            document.write('sum = '+ sum)
+            return sum
+        }
+    }
+    sum(number1,number2)
+
+
+</script>
+</body>
+</html>

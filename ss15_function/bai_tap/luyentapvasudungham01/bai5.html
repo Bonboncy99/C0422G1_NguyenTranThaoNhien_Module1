@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="star">
+<button type="button" onclick="searchConstellation()">Search</button>
+<p id="result"></p>
+<script>
+    let stars = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let constellations = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function searchConstellation() {
+        let flag = false
+        let x = document.getElementById('star').value;
+        let i
+        for (i = 0; i < stars.length; i++) {
+            if (stars[i]==x) {
+                flag = true;
+                break
+            }
+        }
+        if (flag) {
+            document.getElementById('result').innerText = constellations[i]
+        } else {
+            document.getElementById('result').innerText = 'Không tìm thấy chòm sao'
+        }
+    }
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
