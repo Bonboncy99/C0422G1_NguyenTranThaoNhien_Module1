@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(c) {
+            this.c = c;
+        }
+
+        getC() {
+            return this.c;
+        }
+
+        setC(newC) {
+            this.c = newC;
+        }
+        toF(){
+            return (this.c * 1.8 )+ 32;
+        }
+        toKevin () {
+            return this.c + 273.15;
+        }
+    }
+    let temperature = new Temperature(1);
+    document.write('Nhiệt độ  ban đầu là ' + temperature.getC() + 'độ C'+ '<hr>')
+    let nhietDo = parseFloat(prompt('Nhập độ C'))
+    temperature.setC(nhietDo);
+    console.log(temperature.toF())
+    console.log(temperature.toKevin())
+    document.write('Nhiệt độ C  sau khi đổi là ' + temperature.getC() + ' oC'+'<br>')
+    document.write('Nhiệt độ F là ' + temperature.toF() + ' oF '+'<br>')
+    document.write('Nhiệt độ Kevin là ' + temperature.toKevin() + ' oK '+'<br>')
+
+
+
+
+</script>
+</body>
+</html>
+
