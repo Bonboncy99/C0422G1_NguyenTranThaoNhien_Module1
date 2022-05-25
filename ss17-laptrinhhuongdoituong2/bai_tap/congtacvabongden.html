@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bon</title>
+</head>
+<body>
+<script>
+    class SwitchButton{
+        constructor(status, lamp) {
+            this.status = status;
+            this.lamp = lamp;
+        }
+        connecToLamp(electricLamp){
+            this.electricLamp = electricLamp;
+        }
+        switchOn(){
+            this.electricLamp.status = true;
+        }
+        switchOff(){
+            this.electricLamp.status = false;
+        }
+    }
+    class ElectricLamp{
+        constructor(status) {
+            this.status = status;
+        }
+        turnOn(){
+            this.status = true;
+        }
+        turnOff(){
+            this.status = false;
+        }
+        getStatus(){
+            return this.status;
+        }
+    }
+    let switchbutton = new SwitchButton();
+    let electriclamp = new ElectricLamp();
+    switchbutton.connecToLamp(electriclamp);
+    for (let i = 0; i < 10; i++) {
+        switchbutton.switchOn();
+        document.write(electriclamp.status+'<br>');
+        switchbutton.switchOff();
+        document.write(electriclamp.status+'<br>');
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>
