@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập</title>
+</head>
+<body>
+<script>
+    let luong = parseFloat(prompt('Nhập Lương'));
+    let thue;
+    let luongRong;
+    if (luong > 15000000) {
+        thue = luong * 0.2;
+    } else if (luong > 7000000) {
+        thue = luong * 0.1;
+    } else {
+        thue = luong  * 0.05;
+    }
+
+    luongRong = luong + thue;
+    document.write('Tổng lương là;=: '+luongRong)
+</script>
+</body>
+</html>

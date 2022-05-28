@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhập số lượng phần tử của mảng'));
+    let arrA = [];
+    for (let i = 0; i < n; i++) {
+        arrA[i] = parseInt(prompt('Nhập phần tử thứ ' + (i+1)))
+    }
+    let result = 0;
+    let arrB = []
+    for (let i = 0; i < arrA.length ; i++) {
+        result += arrA[i];
+        arrB.push(result)
+    }
+    document.write(arrA + '<br>');
+    document.write(arrB + '<br>');
+</script>
+</body>
+</html>

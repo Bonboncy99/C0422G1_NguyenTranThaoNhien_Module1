@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function createArray(arr) {
+        arr = [];
+        n = parseInt(prompt('Nhập độ dài mảng'));
+        for (let i = 0; i < n ; i++) {
+            arr[i] = prompt('Nhập phần tử thứ' + (i+1))
+        }
+        return arr
+    }
+
+    let numerators = createArray()
+    let denominators = createArray()
+    let max = numerators[0]/denominators[0]
+    let index = 0;
+    for (let i = 0; i < numerators.length ; i++) {
+        if (numerators[i]/denominators[i] > max){
+            max = numerators[i]/denominators[i] > max;
+            index = i
+        }
+    }
+    document.write('Phân số lớn nhất là ' + numerators[index] + '/' + denominators[index] + ' có chỉ số là ' + index)
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write(arr)
+
+    let arr2 = arr.join('').split(' ');
+    let max =arr2[0].length;
+    let index = 0;
+    for (let i = 1; i < arr2.length ; i++) {
+        if (arr2[i].length > max) {
+            max = arr2[i].length;
+            index = i;
+        }
+    }
+    document.write()
+</script>
+</body>
+</html>

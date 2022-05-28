@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let str1 = prompt('Nhập chuỗi 1');
+   let str2 = prompt('Nhập chuỗi 2');
+    arr1 = str1.split('');
+    arr2 = str2.split('');
+    let arr = [];
+   document.write(str1 +'<br>')
+   document.write(str2+'<br>')
+   for (let i = 0; i < arr1.length; i++) {
+       if (arr2.indexOf(arr1[i])!=-1) {
+           arr.push(arr1[i]);
+           arr2.splice(arr2.indexOf(arr1[i]),1)
+       }
+   }
+   document.write(arr.length)
+</script>
+</body>
+</html>

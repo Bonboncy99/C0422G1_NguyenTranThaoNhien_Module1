@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let drinks = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let numbers = [1,2,3,4,5,6]
+    let prices = [10,20,30,40,50,60];
+    function order(x) {
+        for (let i = 0; i < numbers.length; i++) {
+            let price = 0;
+            if (numbers[i]==x) {
+                document.write(`ĐỒ uống: ${drinks[i]}; giá: ${prices[i]}; số lương: ${quantity}; tổng: ${prices[i]*quantity} <br>`)
+                price = prices[i] * quantity;
+                return price
+            }
+        }
+    }
+    let x;
+    let quantity;
+    let total = 0;
+    do {
+        x = parseInt(prompt('1.Cafe\n 2.Cam vắt\n 3.Nước ép cà rốt\n 4.Nước ép cà chua\n 5.Nước lọc\n 6.Nước dừa\n Chọn đồ uống:'));
+        if (x == 7) {
+            break
+        } else {
+            quantity = parseInt(prompt())
+            total += order(x)
+        }
+    } while (x < 7)
+    document.write('Tổng số tiền phải trả là ' + total)
+</script>
+</body>
+</html>

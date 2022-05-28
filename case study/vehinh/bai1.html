@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt('Nhập chiều dài'));
+    let width = parseInt(prompt('Nhập chiều rộng'));
+    for (let i = 0; i <= 2*height; i+=2){
+        for (let j = 0; j <= width ;j++) {
+            if (i==0 || i ==(2*height) || j==0 || j ==width ){
+                document.write('*')
+            } else {
+                document.write('&nbsp&nbsp')
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

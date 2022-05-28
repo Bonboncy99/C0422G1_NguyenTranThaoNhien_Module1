@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let n = parseInt(prompt('Nhập độ dài của mảng'));
+    for (let i = 0; i < n; i++) {
+        let m = parseInt(prompt('Nhập độ dài mảng con'))
+        let arr2 = []
+        for (let j = 0; j < m ; j++) {
+            arr2[j] = parseInt(prompt('Nhập phần tử thứ '+(j+1)))
+        }
+        document.write(arr2 + '<br>')
+        arr.push(arr2)
+    }
+    console.log(arr)
+    function isPrime(x) {
+        if (x < 2) {
+            return false;
+        } else {
+            for (let i = 2; i < x; i++) {
+                if (x % i == 0){
+                    return false
+                }
+            }
+        }
+        return true
+    }
+    let primeInArray = [];
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length ; j++) {
+            if (isPrime(arr[i][j]) && !primeInArray.includes(arr[i][j])){
+                primeInArray.push(arr[i][j])
+                count++
+            }
+        }
+    }
+    console.log(primeInArray)
+    document.write('Số lượng số nguyên tố trong mảng là ' +count + '<br>' +primeInArray )
+</script>
+</body>
+</html>

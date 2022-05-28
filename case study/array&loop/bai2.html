@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function createArray(arr) {
+        arr = [];
+        n = parseInt(prompt('Nhập độ dài mảng'));
+        for (let i = 0; i < n ; i++) {
+            arr[i] = prompt('Nhập phần tử thứ' + (i+1))
+        }
+        return arr
+    }
+
+let arrA = createArray()
+let arrB = createArray()
+
+
+    let result=[]
+    for (let i = 0; i < arrB.length ; i++) {
+        if (!(arrA.includes(arrB[i])) && !(result.includes(arrB[i])))
+        {
+            result.push(arrB[i])
+        }
+    }
+    document.write('Mảng A: ' + arrA + '<br>');
+    document.write('Mảng B: ' + arrB + '<br>');
+    document.write('Kết quả: ' + result + '<br>');
+</script>
+</body>
+</html>
