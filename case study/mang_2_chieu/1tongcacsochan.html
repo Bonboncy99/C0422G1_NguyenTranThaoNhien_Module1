@@ -18,15 +18,22 @@
         arr.push(arr2)
     }
     console.log(arr)
-    let result = 0;
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            if (arr[i][j] % 2 == 0){
-                result += arr[i][j]
+
+    function sum (array){
+        let result  = 0;
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < array[i].length; j++) {
+                if (array[i][j] % 2 == 0){
+                    result += array[i][j]
+                }
             }
         }
+        return result
     }
-document.write('Tổng các số chẵn trong mãng là ' + result)
+
+    console.log(sum(arr))
+
+document.write('Tổng các số chẵn trong mãng là ' + sum(arr))
 </script>
 </body>
 </html>

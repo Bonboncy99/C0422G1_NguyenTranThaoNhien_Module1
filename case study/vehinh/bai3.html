@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let height = parseInt(prompt('Nhập chiều cao tam giác cân'));
+    // for (let i = 2; i <= 2 *height; i+=2) {
+    //     for (let j = 5- (height -1); j <= 5+(height-1); j++) {
+    //         if ((j >= (5 -(i/2 -1)) )&& (j <= (5 + (i/2 -1))) ) {
+    //             document.write('*')
+    //         } else  {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('<br>')
+    // }
+    let height = parseInt(prompt('Nhập chiều cao tam giác cân'));
+    for (let i = 2; i <= 2 *height; i+=2) {
+        for (let j =  -(height -1); j <= (height-1); j++) {
+            if ((j >=  -(i/2 -1) )&& (j <= (i/2 -1))) {
+                document.write('*')
+            } else  {
+                document.write('&nbsp&nbsp')
+            }
+        }
+        document.write('<br>')
+    }
+
+
+    // let h = parseInt(prompt('Nhập chiều cao'));
+    // for (let i = 1; i <= h; i++) {
+    //     for (let j = 1; j < 2*h; j++) {
+    //         if (Math.abs(h-j) <= (i-1)) {
+    //             document.write('*')
+    //         }
+    //         else {
+    //             document.write('&nbsp&nbsp')
+    //         }
+    //     }
+    //     document.write('<br>')
+    // }
+</script>
+</body>
+</html>

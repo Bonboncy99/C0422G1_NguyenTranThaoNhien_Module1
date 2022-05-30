@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<button onclick="create()">Create</button>
+<p id="display"></p>
+<table>
+    <tr>
+        <td>name</td>
+        <td>price</td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+<script>
+    class Phone {
+        constructor(name, price, color, producer) {
+            this._name = name;
+            this._price = price;
+            this._color = color;
+            this._producer = producer;
+        }
+
+        getName() {
+            return this._name;
+        }
+
+        setName(value) {
+            this._name = value;
+        }
+
+        getPrice() {
+            return this._price;
+        }
+
+        setPrice(value) {
+            this._price = value;
+        }
+
+        getColor() {
+            return this._color;
+        }
+
+        setColor(value) {
+            this._color = value;
+        }
+
+        getProducer() {
+            return this._producer;
+        }
+
+        setProducer(value) {
+            this._producer = value;
+        }
+    }
+
+    let nokia = new Phone('Nokia', 2000, 'black', 'NOKIA');
+    let iphone = new Phone('Iphone', 100, 'white', 'APPLE')
+    console.log(nokia)
+    let phoneArray = [nokia, iphone];
+
+
+
+    function display(arr) {
+        let str = '<table border="1">\n' +
+           ''
+
+
+        for (let i = 0; i < arr.length; i++) {
+            str += ' <tr>\n' +
+                '        <td>' + arr[i].getName() + '</td>\n' +
+                '        <td>' + arr[i].getPrice() + '</td>\n' +
+                '        <td>' + arr[i].getColor() + '</td>\n' +
+                '        <td>' + arr[i].getProducer() + '</td>\n' +
+                '<td><button onclick="update('+i+')">Update</button></td>\n'+
+                '<td><button onclick="remove('+i+')">Delete</button></td>\n'+
+
+                '    </tr>\n';
+
+
+        }
+        str += '</table>'
+        document.getElementById('display').innerHTML = str
+    }
+    display(phoneArray)
+
+    function create() {
+        let name = prompt('Nhập tên')
+        let price = prompt('Nhập giá')
+        let color = prompt('Nhập màu')
+        let producer = prompt('Nhập Nhà sản xuất')
+        let newPhone = new Phone(name, price, color, producer)
+        phoneArray.push(newPhone)
+        display(phoneArray)
+
+    }
+
+    function update(index) {
+        let name = prompt('Nhập tên')
+        let price = prompt('Nhập giá')
+        let color = prompt('Nhập màu')
+        let producer = prompt('Nhập Nhà sản xuất')
+
+        phoneArray[index].setName(name)
+        phoneArray[index].setPrice(price)
+        phoneArray[index].setColor(color)
+        phoneArray[index].setProducer(producer)
+        display(phoneArray)
+
+    }
+    function remove(index) {
+        if (confirm('Bạn thật sự muốn xóa?')){
+            phoneArray.splice(index,1)
+        }display(phoneArray)
+    }
+
+</script>
+</body>
+</html>

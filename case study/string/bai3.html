@@ -14,10 +14,13 @@
    document.write(str1 +'<br>')
    document.write(str2+'<br>')
    for (let i = 0; i < arr1.length; i++) {
+       let count = 1
        if (arr2.indexOf(arr1[i])!=-1) {
            arr.push(arr1[i]);
            arr2.splice(arr2.indexOf(arr1[i]),1)
+           count++
        }
+       document.write(arr[i] +' lap lai' + count +' lan <br>' )
    }
    document.write(arr.length)
 </script>
